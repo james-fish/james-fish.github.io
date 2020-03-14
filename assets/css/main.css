@@ -3263,6 +3263,10 @@ small {
 					margin: 0 0 5rem 0;
 				}
 
+				#wrapper section > header p {
+					margin-left: -2rem;
+				}
+
 				#wrapper section > header h1 + p {
 					font-family: "Raleway", Helvetica, sans-serif;
 					font-size: 0.8rem;
@@ -3437,7 +3441,7 @@ small {
 			}
 
 		#wrapper > section.intro > header > * {
-			width: 20rem;
+			width: 23rem;
 		}
 
 		#wrapper > section.intro > header:before {
