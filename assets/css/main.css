@@ -27,7 +27,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	line-height: 1;
@@ -347,6 +348,31 @@ small {
 		border-bottom: solid 2px rgba(144, 144, 144, 0.25);
 		margin: 3rem 0;
 	}
+
+		@media screen and (min-width: 1280) {
+
+			hr {
+				margin-top: 11rem;
+			}
+
+		}
+
+		@media screen and (min-width: 1152px) {
+
+			hr {
+				margin-top: 9rem;
+			}
+
+		}
+
+		@media screen and (max-width: 1152px) {
+
+			hr.optional {
+				visibility: hidden;
+				margin-top: 0;
+			}
+
+		}
 
 		hr.major {
 			margin: 5rem 0;
@@ -3263,8 +3289,12 @@ small {
 					margin: 0 0 5rem 0;
 				}
 
-				#wrapper section > header p {
-					margin-left: -2rem;
+				@media screen and (min-width: 1152px) {
+
+					#wrapper section > header p {
+						margin-left: -2rem;
+					}
+
 				}
 
 				#wrapper section > header h1 + p {
