@@ -3268,12 +3268,20 @@ small {
 			z-index: -1;
 		}
 
+		#wrapper.portfolio:before {
+			width: 35vw;
+		}
+
 		#wrapper section {
 			display: grid;
 			grid-template-areas: "header content" "footer content";
 			grid-template-columns: 50vw 50vw;
 			grid-template-rows: 1fr;
 		}
+
+			#wrapper.portfolio section {
+				grid-template-columns: 35vw 65vw;
+			}
 
 			#wrapper section:first-child {
 				margin-top: 0;
@@ -3293,6 +3301,10 @@ small {
 
 					#wrapper section > header p {
 						margin-left: -2rem;
+					}
+
+					#wrapper.portfolio section > header p {
+						margin-left: 0;
 					}
 
 				}
@@ -3337,6 +3349,10 @@ small {
 				width: 2px;
 			}
 
+			#wrapper.portfolio > section > header:before {
+				display: none;
+			}
+
 			#wrapper > section > header h1, #wrapper > section > header h2 {
 				position: relative;
 			}
@@ -3350,6 +3366,10 @@ small {
 					top: 1rem;
 				}
 
+				#wrapper.portfolio > section > header h1:before, #wrapper.portfolio > section > header h2:before {
+					display: none;
+				}
+
 				#wrapper > section > header h1:after, #wrapper > section > header h2:after {
 					background: #bb673f;
 					border-radius: 0.5rem;
@@ -3359,6 +3379,10 @@ small {
 					position: absolute;
 					top: 0.75rem;
 					width: 0.5rem;
+				}
+
+				#wrapper.portfolio > section > header h1:after, #wrapper.portfolio > section > header h2:after {
+					display: none;
 				}
 
 			#wrapper > section > header h1 {
@@ -3381,24 +3405,24 @@ small {
 					margin-top: 6rem;
 				}
 
-			#wrapper > section.intro {
+			#wrapper > section.landing {
 				align-items: center;
 			}
 
-				#wrapper > section.intro > header {
+				#wrapper > section.landing > header {
 					padding-top: 4rem;
 					width: 100%;
 				}
 
-					#wrapper > section.intro > header > * {
+					#wrapper > section.landing > header > * {
 						margin-left: auto;
 					}
 
-					#wrapper > section.intro > header:before {
+					#wrapper > section.landing > header:before {
 						left: auto;
 					}
 
-				#wrapper > section.intro > .content {
+				#wrapper > section.landing > .content {
 					height: 100vh;
 					max-width: none;
 				}
@@ -3419,12 +3443,21 @@ small {
 				z-index: 1;
 			}
 
+			#wrapper.portfolio > section:last-of-type > header:after {
+				display: none;
+			}
+
+
 		#wrapper .copyright {
 			color: rgba(0, 0, 0, 0.25);
 			font-size: 1rem;
 			left: 50vw;
 			position: relative;
 			width: 50vw;
+		}
+
+		#wrapper .copyright {
+			left: 35vw;
 		}
 
 			#wrapper .copyright a {
@@ -3438,6 +3471,11 @@ small {
 			#wrapper section > header {
 				padding: 0 10rem 0 5rem;
 				width: 35rem;
+			}
+
+			#wrapper.portfolio section > header {
+				padding: 0 5rem;
+				width: auto;
 			}
 
 			#wrapper section > .content {
@@ -3466,25 +3504,32 @@ small {
 			left: calc(-50vw - 5rem);
 		}
 
+		#wrapper.portfolio > section > .content > section {
+			left: -41.5vw;
+		}
 			#wrapper > section > .content > section > header {
 				width: 32rem;
 			}
 
-		#wrapper > section.intro > header > * {
+			#wrapper.portfolio > section > .content > section > header {
+				width: auto;
+			}
+
+		#wrapper > section.landing > header > * {
 			width: 23rem;
 		}
 
-		#wrapper > section.intro > header:before {
+		#wrapper > section.landing > header:before {
 			margin-left: calc(50vw - 10rem);
 		}
 
 		@media screen and (max-width: 1152px) {
 
-			#wrapper > section.intro > header > * {
+			#wrapper > section.landing > header > * {
 				width: 100%;
 			}
 
-			#wrapper > section.intro > header:before {
+			#wrapper > section.landing > header:before {
 				margin-left: 0;
 			}
 
@@ -3543,11 +3588,11 @@ small {
 						width: 30rem;
 					}
 
-				#wrapper > section.intro > header > * {
+				#wrapper > section.landing > header > * {
 					width: 21rem;
 				}
 
-				#wrapper > section.intro > header:before {
+				#wrapper > section.landing > header:before {
 					margin-left: calc(50vw - 8rem);
 				}
 
@@ -3555,11 +3600,11 @@ small {
 
 		@media screen and (max-width: 1280px) and (max-width: 1152px) {
 
-			#wrapper > section.intro > header > * {
+			#wrapper > section.landing > header > * {
 				width: 100%;
 			}
 
-			#wrapper > section.intro > header:before {
+			#wrapper > section.landing > header:before {
 				margin-left: 0;
 			}
 
@@ -3676,29 +3721,29 @@ small {
 						margin-bottom: 0;
 					}
 
-					#wrapper > section.intro {
+					#wrapper > section.landing {
 						margin-bottom: 0;
 					}
 
-						#wrapper > section.intro > header {
+						#wrapper > section.landing > header {
 							margin-bottom: 0;
 						}
 
-							#wrapper > section.intro > header ul.actions {
+							#wrapper > section.landing > header ul.actions {
 								display: none;
 							}
 
-							#wrapper > section.intro > header > * {
+							#wrapper > section.landing > header > * {
 								margin-left: 0;
 								margin-right: 0;
 								width: 100%;
 							}
 
-							#wrapper > section.intro > header > ul.actions {
+							#wrapper > section.landing > header > ul.actions {
 								margin-left: -1rem;
 							}
 
-							#wrapper > section.intro > header:before {
+							#wrapper > section.landing > header:before {
 								margin-left: 0;
 							}
 
@@ -3735,7 +3780,7 @@ small {
 						padding: 0 4rem 4rem 4rem;
 					}
 
-					#wrapper > section.intro > header {
+					#wrapper > section.landing > header {
 						padding: 8rem 4rem 5rem 4rem;
 					}
 
@@ -3771,7 +3816,7 @@ small {
 					padding: 0 2rem 3rem 2rem;
 				}
 
-				#wrapper > section.intro > header {
+				#wrapper > section.landing > header {
 					padding: 5.5rem 2rem 2.5rem 2rem;
 				}
 
@@ -3807,7 +3852,7 @@ small {
 					padding: 0 1.5rem 2.25rem 1.5rem;
 				}
 
-				#wrapper > section.intro > header {
+				#wrapper > section.landing > header {
 					padding: 4.875rem 1.5rem 1.875rem 1.5rem;
 				}
 
@@ -3829,7 +3874,7 @@ small {
 		background-position: 25% 50%;
 	}
 
-	body.is-mobile #wrapper > section.intro > header {
+	body.is-mobile #wrapper > section.landing > header {
 		background-position: 25% 23%;
 	}
 
@@ -3841,47 +3886,47 @@ small {
 			opacity: 0;
 		}
 
-	#wrapper > section.intro {
+	#wrapper > section.landing {
 		transition: opacity 1s ease;
 		opacity: 1;
 	}
 
-		#wrapper > section.intro > header {
+		#wrapper > section.landing > header {
 			transition: transform 1s ease;
 		}
 
-		#wrapper > section.intro > .content {
+		#wrapper > section.landing > .content {
 			transition: transform 1s ease;
 		}
 
-		body.is-preload #wrapper > section.intro {
+		body.is-preload #wrapper > section.landing {
 			opacity: 0;
 		}
 
-			body.is-preload #wrapper > section.intro > header {
+			body.is-preload #wrapper > section.landing > header {
 				transform: translateY(1rem);
 			}
 
-			body.is-preload #wrapper > section.intro > .content {
+			body.is-preload #wrapper > section.landing > .content {
 				transform: translateY(-1rem);
 			}
 
 		@media screen and (max-width: 1280px) {
 
-			#wrapper > section.intro > header > * {
+			#wrapper > section.landing > header > * {
 				transition: transform 1s ease, opacity 1s ease;
 			}
 
-			body.is-preload #wrapper > section.intro > header {
+			body.is-preload #wrapper > section.landing > header {
 				transform: none;
 			}
 
-				body.is-preload #wrapper > section.intro > header > * {
+				body.is-preload #wrapper > section.landing > header > * {
 					transform: translate(-0.5rem);
 					opacity: 0;
 				}
 
-			body.is-preload #wrapper > section.intro > .content {
+			body.is-preload #wrapper > section.landing > .content {
 				transform: none;
 			}
 
@@ -4271,6 +4316,9 @@ small {
 	.py-5 {
 	  padding-top: 3rem !important;
 	  padding-bottom: 3rem !important; }
+
+	.pt-10 {
+		padding-top: 10rem !important; }
 
 	.m-auto {
 	  margin: auto !important; }
