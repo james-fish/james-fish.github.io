@@ -2983,22 +2983,24 @@ small {
 				text-align: center;
 			}
 
-			.gallery.gallery-mini > a > .image-container {
+			.gallery > a > .image-container {
 				text-align: center;
 				position: relative;
 			}
-				.gallery.gallery-mini > a > .image-container > .subtitle {
+				.gallery > a > .image-container > .subtitle {
 					position: absolute;
 					top: 50%;
 					left: 50%;
 					transform: translate(-50%, -50%);
 					display: none;
 				}
-				.gallery.gallery-mini > a > .image-container:hover > .subtitle {
+				.gallery > a > .image-container:hover > .subtitle {
 					display: block;
+				}
+				.gallery.gallery-mini > a > .image-container:hover > .subtitle {
 					font-size: small;
 				}
-				.gallery.gallery-mini > a > .image-container:hover > img {
+				.gallery > a > .image-container:hover > img {
 					opacity: 0.4;
 				}
 
