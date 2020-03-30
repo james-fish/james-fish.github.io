@@ -2980,7 +2980,27 @@ small {
 
 			.gallery.gallery-mini a {
 				width: calc(33% - 1.25rem);
+				text-align: center;
 			}
+
+			.gallery.gallery-mini > a > .image-container {
+				text-align: center;
+				position: relative;
+			}
+				.gallery.gallery-mini > a > .image-container > .subtitle {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					display: none;
+				}
+				.gallery.gallery-mini > a > .image-container:hover > .subtitle {
+					display: block;
+					font-size: small;
+				}
+				.gallery.gallery-mini > a > .image-container:hover > img {
+					opacity: 0.4;
+				}
 
 			.gallery a img {
 				display: block;
