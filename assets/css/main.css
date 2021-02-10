@@ -3035,6 +3035,12 @@ small {
 					height: 30vw;
 				}
 
+				.gallery a.landscape.fullwidth img {
+					width: 100%;
+					height: auto;
+					min-height: auto;
+				}
+
 			.gallery a.portrait img {
 				height: 30vw;
 			}
@@ -3471,7 +3477,7 @@ small {
 				@media screen and (min-width: 1152px) {
 
 					#wrapper.portfolio section.landing > header {
-						padding: 0 5rem;
+						padding: 0 5rem 0 3rem;
 						width: auto;
 					}
 
@@ -3582,6 +3588,10 @@ small {
 			width: 23rem;
 		}
 
+		#wrapper.portfolio > section.landing > header > * {
+			width: auto;
+		}
+
 		#wrapper > section.landing > header:before {
 			margin-left: calc(50vw - 10rem);
 		}
@@ -3653,6 +3663,10 @@ small {
 
 				#wrapper > section.landing > header > * {
 					width: 21rem;
+				}
+
+				#wrapper.portfolio > section.landing > header > * {
+					width: auto;
 				}
 
 				#wrapper > section.landing > header:before {
