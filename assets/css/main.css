@@ -3344,11 +3344,11 @@ small {
 				text-align: right;
 			}
 
-				#wrapper section > header h2 {
-					margin: 0 0 5rem 0;
-				}
-
 				@media screen and (min-width: 1152px) {
+
+					#wrapper section > header h2 {
+						margin: 0 0 5rem 0;
+					}
 
 					#wrapper.portfolio section {
 						grid-template-columns: 35vw 65vw;
