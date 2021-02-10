@@ -97,6 +97,7 @@ small {
 
 	html {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
 	}
 
 	*, *:before, *:after {
@@ -3714,7 +3715,7 @@ small {
 					}
 
 						#wrapper > section > header > * {
-							max-width: 25rem;
+							max-width: 40rem;
 						}
 
 						#wrapper > section > header > :last-child {
